@@ -559,6 +559,18 @@ footer .flinks a:hover{color:var(--beige)}
 <script>
 const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+/* obnova pozice scrollu po reloadu */
+history.scrollRestoration='manual';
+const scrollKey='scrollY:'+location.pathname;
+const saveScroll=()=>sessionStorage.setItem(scrollKey,scrollY);
+addEventListener('beforeunload',saveScroll);
+addEventListener('pagehide',saveScroll);
+const savedY=parseFloat(sessionStorage.getItem(scrollKey));
+if(savedY>0){
+  scrollTo({top:savedY,behavior:'instant'});
+  addEventListener('load',()=>scrollTo({top:savedY,behavior:'instant'}));
+}
+
 /* nav + floating CTA + parallax */
 const nav=document.getElementById('nav'),floatCta=document.getElementById('floatCta'),heroBg=document.getElementById('heroBg');
 const bleedImgs=[...document.querySelectorAll('.bleed img')];
