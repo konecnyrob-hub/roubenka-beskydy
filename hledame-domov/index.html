@@ -9,7 +9,7 @@
 <meta property="og:description" content="Předáváme místo, které jsme milovali. Hledáme místo, kde začne další etapa našeho života. Víte o domě nebo chalupě v okolí Bechyně či směrem k Praze?">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://roubenkanaprodej.cz/hledame-domov/">
-<meta property="og:image" content="https://roubenkanaprodej.cz/images/owners-story.jpg">
+<meta property="og:image" content="https://roubenkanaprodej.cz/images/terrace-garden.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://roubenkanaprodej.cz/hledame-domov/">
 <!-- Google Analytics 4 (gtag.js) — ZDE nahraďte G-20ZVJY9CL6 svým Measurement ID (celkem 2 výskyty níže) -->
@@ -64,7 +64,7 @@ nav.scrolled .nav-back{color:var(--forest)}
 
 /* hero */
 .hero{position:relative;height:clamp(520px,72svh,760px);display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:0}
-.hero-bg{position:absolute;inset:-10% 0;background:url('../images/terrace-view.jpg') center 55%/cover no-repeat;will-change:transform}
+.hero-bg{position:absolute;inset:-10% 0;background:url('../images/terrace-garden.jpg') center 60%/cover no-repeat;will-change:transform}
 .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,25,19,.52) 0%,rgba(15,25,19,.3) 45%,rgba(15,25,19,.6) 100%)}
 .hero-content{position:relative;z-index:2;color:#fff;max-width:840px;padding:0 6vw}
 .hero .badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.14);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.25);border-radius:99px;padding:.5rem 1.2rem;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;margin-bottom:2rem;animation:heroFade 1.3s var(--ease) .15s both}
@@ -91,6 +91,25 @@ nav.scrolled .nav-back{color:var(--forest)}
 .owners-photo{margin:clamp(3rem,5vw,4.5rem) auto 0;max-width:900px;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow)}
 .owners-photo img{width:100%;height:auto}
 .owners-rule{border:0;height:1px;background:linear-gradient(90deg,transparent,rgba(31,51,39,.18),transparent);margin:clamp(3.5rem,6vw,5.5rem) auto clamp(2.5rem,4vw,3.5rem);max-width:520px}
+
+/* kritéria */
+.criteria{background:var(--beige)}
+.criteria .head{text-align:center;max-width:44ch;margin:0 auto clamp(2.5rem,4vw,3.5rem)}
+.criteria .head h2{font-size:clamp(1.8rem,3.2vw,2.6rem)}
+.crit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.crit{background:var(--white);border-radius:var(--radius);padding:1.9rem 1.7rem;box-shadow:var(--shadow-soft);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.crit:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.crit h3{font-size:1.15rem;margin-bottom:.7rem}
+.crit p{color:#4a4f45;font-weight:300;font-size:.93rem;line-height:1.75}
+@media(max-width:900px){.crit-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.crit-grid{grid-template-columns:1fr}}
+
+/* co rozhoduje */
+.decides{background:var(--forest-deep);color:var(--beige);text-align:center}
+.decides h2{color:var(--beige);font-size:clamp(1.8rem,3.2vw,2.6rem);margin-bottom:1.6rem}
+.decides p{color:rgba(245,239,230,.72);font-weight:300;max-width:60ch;margin:0 auto 1.4rem}
+.decides .words{font-family:var(--serif);font-style:italic;color:var(--wood-soft);font-size:clamp(1.3rem,2.6vw,2rem);line-height:1.6;margin:2.4rem auto}
+.decides .belong{font-family:var(--serif);color:var(--beige);font-size:clamp(1.15rem,2vw,1.5rem);margin-bottom:2.4rem}
 
 /* dvě cesty */
 .paths{background:var(--beige)}
@@ -152,32 +171,24 @@ footer a:hover{color:var(--beige)}
   <div class="hero-content">
     <span class="badge">Osobní výzva majitelů</span>
     <h1>Hledáme domov<br><em>pro další etapu života</em></h1>
-    <p>Víte o domě nebo chalupě v okolí Bechyně či směrem k Praze? Budeme vděční za každou informaci.</p>
+    <p>Hledáme místo v pásu od jižních Čech směrem k Praze. Možná o něm víte právě vy.</p>
   </div>
 </header>
 
 <section class="story-owners">
   <div class="container-story">
     <div class="reveal">
-      <h2>Příběh majitelů</h2>
+      <h2>Hledáme domov pro další etapu života</h2>
       <svg class="owners-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7-4.4-7-9.6A4 4 0 0 1 12 8a4 4 0 0 1 7 2.9c0 5.2-7 9.6-7 9.6z"/></svg>
-      <p class="owners-lead">Předáváme místo, které jsme milovali.<br>Hledáme místo, kde začne další etapa našeho života.</p>
+      <p class="owners-lead">Jsme aktivní manželé ve zralém věku. Nehledáme jen dům v přírodě, ale především místo pro další etapu společného života.</p>
     </div>
 
     <div class="owners-body reveal">
-      <p>Někdy si myslíme, že největší životní změny přicházejí náhle. Naše zkušenost je jiná. Přicházejí pomalu. Nenápadně. Až jednoho dne zjistíme, že nastal čas uzavřít jednu kapitolu a otevřít další.</p>
+      <p>Takový charakter místa hledáme i pro náš nový domov.</p>
 
-      <p>Před lety jsme našli toto nádherné místo uprostřed beskydské přírody. Nebyla to pro nás jen koupě roubenky. Byl to sen. Sen vytvořit domov pro naši rodinu. Místo, kde se budou setkávat generace, přátelé i lidé hledající klid, inspiraci a sílu přírody. Do tohoto snu jsme vložili mnoho let práce, péče, velké investice finančních prostředků i kus svého srdce.</p>
+      <p>Nejde nám o stejný dům, rozlehlé pozemky ani samotu lesních lázní, jak jsme měli dosud. Hledáme menší, dostupný pozemek v klidném prostředí, s dostatkem soukromí, vzrostlou zelení a přirozeným propojením s okolní krajinou.</p>
 
-      <p>Život se ale vyvíjí. Děti dospívají, rodiny se proměňují a každý člověk postupně hledá svou vlastní cestu. Postupně jsme si uvědomili, že nastal čas předat tento krásný příběh někomu dalšímu. Ne proto, že bychom toto místo přestali milovat. Právě proto, že ho máme rádi, přejeme si, aby znovu naplno žilo s někým, kdo zde bude psát svou vlastní kapitolu.</p>
-
-      <p>Současně se rodí i náš nový sen. Po letech intenzivní práce hledáme menší domov v okolí Bechyně. Místo, které bude odpovídat další etapě našeho života. Takové, které nám ponechá díky blízkosti více času na společný život. Místo v přírodě, kde budeme žít s ženou a kde vznikne malý prostor pro naše děti, přátele i jednotlivce nebo dvojice, kteří budou chtít na chvíli zpomalit, nadechnout se a načerpat novou energii.</p>
-
-      <p>Možná právě v tom spočívá jedna z tichých zákonitostí života. Některé sny nekončí proto, že byly špatné. Končí proto, že splnily svůj úkol a uvolňují místo tomu, co chce vzniknout dál.</p>
-
-      <p>Pokud hledáte výjimečné místo v Beskydech, možná právě zde začne váš vlastní příběh. A pokud víte o domě nebo chalupě v okolí Bechyně a směrem k Praze, která by mohla být začátkem naší další životní etapy, budeme vděční za každou informaci.</p>
-
-      <p>Děkujeme, že jste se na chvíli stali součástí našeho příběhu. Třeba se právě díky němu propojí dva nové. Jeden, který zde bude pokračovat</p>
+      <p>Chceme znovu najít pocit vlastního světa a klidu, tentokrát s pohodlným domem a blíž práci a lidem, kteří chtějí být součástí našeho života.</p>
     </div>
 
     <figure class="owners-photo reveal-img reveal">
@@ -185,29 +196,76 @@ footer a:hover{color:var(--beige)}
     </figure>
 
     <hr class="owners-rule reveal">
+
+    <div class="reveal">
+      <h2 style="font-size:clamp(1.8rem,3.2vw,2.6rem);margin-bottom:2rem">Příběh pokračuje</h2>
+    </div>
+
+    <div class="owners-body reveal">
+      <p>Před lety jsme v Beskydech našli místo, které jsme si zamilovali. Věnovali jsme mu mnoho let péče, práce i radosti.</p>
+
+      <p>Dnes cítíme, že nastal čas předat tento krásný příběh dál. Ne proto, že by ztratil svůj smysl. Ale proto, že další etapa našeho života se přirozeně přesouvá blíž rodině, přátelům i práci.</p>
+
+      <p>Proto hledáme místo v pásu od jižních Čech směrem k Praze. Místo, které se stane naším novým domovem. Možná o něm víte právě vy.</p>
+
+      <p>Každé místo má svůj čas. To naše vzniklo v Beskydech. Stalo se součástí našeho života, života rodiny a našich přátel i mnoha krásných setkání. Dnes jej chceme předat někomu, kdo v něm bude realizovat své sny. My mezitím hledáme místo, kde začne další etapa našeho života.</p>
+    </div>
+
+    <hr class="owners-rule reveal">
+
+    <div class="reveal">
+      <h2 style="font-size:clamp(1.8rem,3.2vw,2.6rem);margin-bottom:1.6rem">Jak chceme žít</h2>
+      <p class="owners-lead" style="max-width:30ch">Nehledáme dokonalý dům. Hledáme místo v lůnu přírody, plné světla, s dostatkem soukromí, kam se budeme každý den rádi vracet.</p>
+    </div>
+  </div>
+</section>
+
+<section class="criteria">
+  <div class="container-story">
+    <div class="head reveal">
+      <h2>Naše představa nového domova</h2>
+    </div>
+    <div class="crit-grid">
+      <div class="crit reveal"><h3>Lokalita</h3><p>Pás od jižních Čech směrem k Praze; okolí Bechyně výhodou; dobrá dostupnost do Prahy; klidná obec, okraj obce nebo polosamota.</p></div>
+      <div class="crit reveal"><h3>Typ nemovitosti</h3><p>Rodinný dům, vila, chalupa, větší chata vhodná k trvalému bydlení.</p></div>
+      <div class="crit reveal"><h3>Pozemek</h3><p>Přibližně 1 000–4 000 m²; soukromí ideálně s výhledem do krajiny; vzrostlé stromy výhodou; zahrada s charakterem; odstup od sousedů vítán.</p></div>
+      <div class="crit reveal"><h3>Dům</h3><p>Velmi dobrý technický stav; bez rozsáhlé rekonstrukce; dostatek světla; otevřený obytný prostor výhodou; nenáročný na dlouhodobou údržbu.</p></div>
+      <div class="crit reveal"><h3>Dispozice</h3><p>Pohodlné, ne příliš velké bydlení pro dva; ideálně se samostatným prostorem pro rodinu, klienty nebo pracovnou.</p></div>
+      <div class="crit reveal"><h3>Rozpočet</h3><p>Orientačně kolem 10 mil. Kč; vyšší cena pouze u výjimečné nemovitosti.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="decides">
+  <div class="container-story reveal">
+    <h2>Co opravdu rozhoduje</h2>
+    <p>Parametry jsou důležité. O konečném rozhodnutí ale často rozhodují věci, které se do žádného formuláře nevejdou.</p>
+    <p class="words">Atmosféra. &nbsp;Světlo. &nbsp;Výhled. &nbsp;Klid. &nbsp;Genius loci.</p>
+    <p class="belong">Pocit, že právě sem patříme.</p>
+    <p>Proto budeme rádi i za nabídku, která nesplňuje všechna kritéria, ale má něco výjimečného.</p>
   </div>
 </section>
 
 <section class="paths">
   <div class="container-story">
     <div class="head reveal">
-      <h2>Dvě cesty, které se tu mohou potkat</h2>
-      <p>Možná nám pomůžete najít nový domov. Možná právě vy budete pokračovat v příběhu naší roubenky.</p>
+      <h2>Můžete nám prosím pomoci?</h2>
+      <p>Budeme vděční za každý tip. Ať jste majitel nemovitosti, realitní makléř, nebo jen víte o místě, které by mohlo odpovídat našemu hledání. Možná právě vaše informace propojí dva krásné příběhy.</p>
     </div>
     <div class="path-grid">
       <div class="path-card reveal">
         <span class="eyebrow">Hledáme</span>
-        <h3>Dům nebo chalupu v okolí Bechyně</h3>
-        <p>Menší domov v přírodě v okolí Bechyně nebo směrem k Praze. Místo pro nás dva, s prostorem pro děti a přátele.</p>
+        <h3>Dům nebo chalupu v pásu k Praze</h3>
+        <p>Menší domov v přírodě — okolí Bechyně a jižní Čechy směrem ku Praze, s dostatkem soukromí a vzrostlou zelení.</p>
         <p>Pokud o takové nemovitosti víte nebo ji sami nabízíte, ozvěte se nám prosím.</p>
-        <a href="#kontakt" class="btn btn-forest">👉 Mám podobnou nemovitost</a>
+        <a href="#kontakt" class="btn btn-forest">👉 Mám tip na nemovitost</a>
       </div>
       <div class="path-card reveal">
         <span class="eyebrow">Nabízíme</span>
         <h3>Naši roubenku v Beskydech</h3>
         <p>Ručně roubený dům na vlastním pozemku 34 525 m² v srdci Slezských Beskyd. Naprosté soukromí, les a ticho.</p>
-        <p>Prohlédněte si fotografie, 3D prohlídku a celý příběh místa.</p>
-        <a href="../" class="btn btn-outline">Prohlédnout roubenku</a>
+        <p>Poznat příběh roubenky a její prodejní nabídku.</p>
+        <a href="../" class="btn btn-outline">Prohlédnout roubenku →</a>
       </div>
     </div>
   </div>
@@ -216,18 +274,18 @@ footer a:hover{color:var(--beige)}
 <section class="contact" id="kontakt">
   <div class="container-story">
     <div class="reveal">
-      <h2>Ozvěte se nám</h2>
-      <p class="lead">Stačí krátká zpráva nebo telefonát. Každého tipu si upřímně vážíme.</p>
+      <h2>Každý domov má svůj čas</h2>
+      <p class="lead">Jeden krásný příběh se v Beskydech pomalu uzavírá. Druhý právě začíná. Možná právě díky vám se oba příběhy potkají.</p>
     </div>
     <div class="contact-card reveal">
-      <p class="agent">Jan Czirok</p>
-      <a class="cline" href="tel:+420601243561">+420 601 243 561</a>
-      <a class="cline" href="mailto:jczirok@avenirgroup.cz">jczirok@avenirgroup.cz</a>
+      <p class="agent">Kontakt pro tipy na nový domov</p>
+      <a class="cline" href="tel:+420604261081">+420 604 261 081</a>
+      <a class="cline" href="mailto:emanuel.byrtus@gmail.com">emanuel.byrtus@gmail.com</a>
       <div class="contact-ctas">
-        <a href="tel:+420601243561" class="btn btn-forest">📞 Zavolat</a>
-        <a href="mailto:jczirok@avenirgroup.cz?subject=Tip%20na%20nemovitost%20%E2%80%94%20Hled%C3%A1me%20domov" class="btn btn-outline">✉️ Napsat e-mail</a>
+        <a href="tel:+420604261081" class="btn btn-forest">📞 Zavolat</a>
+        <a href="mailto:emanuel.byrtus@gmail.com?subject=Tip%20na%20nemovitost%20%E2%80%94%20Hled%C3%A1me%20domov" class="btn btn-outline">✉️ Napsat e-mail</a>
       </div>
-      <p class="contact-note">Ozveme se zpět do 24 hodin.</p>
+      <p class="contact-note">Budeme vděční za každý tip.</p>
     </div>
   </div>
 </section>
