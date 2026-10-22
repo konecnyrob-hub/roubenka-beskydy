@@ -96,6 +96,9 @@ nav.scrolled .nav-back{color:var(--forest)}
 .intro .lead{font-family:var(--serif);font-style:italic;font-weight:300;color:var(--forest);font-size:clamp(1.35rem,2.1vw,1.85rem);line-height:1.5}
 @media(max-width:860px){.intro .grid{grid-template-columns:1fr;gap:2rem}}
 
+.inline-link a{color:var(--forest);text-decoration:none;font-weight:500;font-size:.95rem;border-bottom:1px solid rgba(31,51,39,.25);padding-bottom:3px;transition:border-color .3s,color .3s}
+.inline-link a:hover{color:var(--wood);border-color:var(--wood)}
+
 /* příběh + foto */
 .story{background:var(--beige)}
 .story .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,5vw,4.5rem);align-items:center}
@@ -205,6 +208,7 @@ footer a:hover{color:var(--beige)}
       <p>Takový charakter místa hledáme i pro náš nový domov.</p>
       <p>Nejde nám o stejný dům, rozlehlé pozemky ani samotu lesních lázní, jak jsme měli dosud. Hledáme menší, dostupný pozemek v klidném prostředí, s dostatkem soukromí, vzrostlou zelení a přirozeným propojením s okolní krajinou.</p>
       <p>Chceme znovu najít pocit vlastního světa a klidu, tentokrát s pohodlným domem a blíž práci a lidem, kteří chtějí být součástí našeho života.</p>
+      <p class="inline-link"><a href="../">Prohlédnout náš dosavadní domov v Beskydech → roubenkanaprodej.cz</a></p>
     </div>
   </div>
 </section>
@@ -222,6 +226,7 @@ footer a:hover{color:var(--beige)}
       <div class="body-text">
         <p>Před lety jsme v Beskydech našli místo, které jsme si zamilovali. Věnovali jsme mu mnoho let péče, práce i radosti.</p>
         <p>Dnes cítíme, že nastal čas předat tento krásný příběh dál. Ne proto, že by ztratil svůj smysl. Ale proto, že další etapa našeho života se přirozeně přesouvá blíž rodině, přátelům i práci.</p>
+        <p>Proto hledáme místo v pásu od jižních Čech směrem k Praze. Místo, které se stane naším novým domovem. Možná o něm víte právě vy.</p>
         <p>Každé místo má svůj čas. To naše vzniklo v Beskydech. Stalo se součástí našeho života, života rodiny a našich přátel i mnoha krásných setkání. Dnes jej chceme předat někomu, kdo v něm bude realizovat své sny. My mezitím hledáme místo, kde začne další etapa našeho života.</p>
       </div>
     </div>
@@ -239,8 +244,8 @@ footer a:hover{color:var(--beige)}
 <section class="criteria">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Naše představa</span>
-      <h2>Jaký domov hledáme</h2>
+      <span class="eyebrow">Jaký domov hledáme</span>
+      <h2>Naše představa nového domova</h2>
     </div>
     <div class="crit-grid">
       <div class="crit reveal"><span class="n">01</span><h3>Lokalita</h3><p>Pás od jižních Čech směrem k Praze; okolí Bechyně výhodou; dobrá dostupnost do Prahy; klidná obec, okraj obce nebo polosamota.</p></div>
@@ -255,8 +260,8 @@ footer a:hover{color:var(--beige)}
 
 <section class="decides">
   <div class="wrap reveal">
-    <span class="eyebrow">Co opravdu rozhoduje</span>
-    <h2>Věci, které se do formuláře nevejdou</h2>
+    <span class="eyebrow">Parametry nejsou všechno</span>
+    <h2>Co opravdu rozhoduje</h2>
     <p>Parametry jsou důležité. O konečném rozhodnutí ale často rozhodují věci, které se do žádného formuláře nevejdou.</p>
     <div class="words">
       <span>Atmosféra.</span><span>Světlo.</span><span>Výhled.</span><span>Klid.</span><span>Genius loci.</span>
@@ -266,12 +271,20 @@ footer a:hover{color:var(--beige)}
   </div>
 </section>
 
+<section class="bleed reveal">
+  <img src="../images/aerial-estate.jpg" alt="Letecký pohled na roubenku uprostřed lesů" loading="lazy">
+  <div class="quote">
+    <span class="eyebrow">Náš dosavadní domov</span>
+    <p>Roubenka v srdci Slezských Beskyd — místo, které předáváme dál.</p>
+  </div>
+</section>
+
 <section class="paths">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Můžete nám pomoci?</span>
-      <h2>Dva příběhy, které se mohou potkat</h2>
-      <p>Budeme vděční za každý tip. Ať jste majitel nemovitosti, realitní makléř, nebo jen víte o místě, které by mohlo odpovídat našemu hledání.</p>
+      <span class="eyebrow">Dva příběhy, které se mohou potkat</span>
+      <h2>Můžete nám prosím pomoci?</h2>
+      <p>Budeme vděční za každý tip. Ať jste majitel nemovitosti, realitní makléř, nebo jen víte o místě, které by mohlo odpovídat našemu hledání. Možná právě vaše informace propojí dva krásné příběhy.</p>
     </div>
     <div class="path-grid">
       <div class="path-card reveal">
@@ -295,9 +308,9 @@ footer a:hover{color:var(--beige)}
 <section class="contact" id="kontakt">
   <div class="wrap">
     <div class="reveal">
-      <span class="eyebrow">Každý domov má svůj čas</span>
-      <h2>Možná právě díky vám<br>se oba příběhy potkají</h2>
-      <p class="lead">Jeden krásný příběh se v Beskydech pomalu uzavírá. Druhý právě začíná.</p>
+      <span class="eyebrow">Kontakt</span>
+      <h2>Každý domov má svůj čas</h2>
+      <p class="lead">Jeden krásný příběh se v Beskydech pomalu uzavírá. Druhý právě začíná. Možná právě díky vám se oba příběhy potkají.</p>
     </div>
     <div class="contact-card reveal">
       <p class="who">Kontakt pro tipy na nový domov</p>
